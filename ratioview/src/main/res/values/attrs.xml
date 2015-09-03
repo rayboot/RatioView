@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioSizeOpt">
+        <attr name="widthRatio" format="float"/>
+        <attr name="heightRatio" format="float"/>
+        <attr name="fixRatio" format="enum" >
+            <enum name="fixWidth" value="1" />
+            <enum name="fixHeight" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
