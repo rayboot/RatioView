@@ -40,9 +40,9 @@ public class RatioImageView extends ImageView implements RatioMeasureDelegate {
         super(context);
     }
 
-    public RatioImageView(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioImageView(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioImageView(Context context, AttributeSet attrs) {

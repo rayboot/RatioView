@@ -40,9 +40,9 @@ public class RatioButton extends Button implements RatioMeasureDelegate {
         super(context);
     }
 
-    public RatioButton(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioButton(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioButton(Context context, AttributeSet attrs) {

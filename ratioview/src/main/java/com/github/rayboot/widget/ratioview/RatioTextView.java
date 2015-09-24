@@ -40,9 +40,9 @@ public class RatioTextView extends TextView implements RatioMeasureDelegate {
         super(context);
     }
 
-    public RatioTextView(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioTextView(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioTextView(Context context, AttributeSet attrs) {

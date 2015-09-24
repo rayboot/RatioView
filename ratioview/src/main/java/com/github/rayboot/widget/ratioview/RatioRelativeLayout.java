@@ -40,9 +40,9 @@ public class RatioRelativeLayout extends RelativeLayout implements RatioMeasureD
         super(context);
     }
 
-    public RatioRelativeLayout(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioRelativeLayout(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioRelativeLayout(Context context, AttributeSet attrs) {

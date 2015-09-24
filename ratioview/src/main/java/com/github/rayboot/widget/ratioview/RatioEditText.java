@@ -40,9 +40,9 @@ public class RatioEditText extends EditText implements RatioMeasureDelegate {
         super(context);
     }
 
-    public RatioEditText(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioEditText(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioEditText(Context context, AttributeSet attrs) {

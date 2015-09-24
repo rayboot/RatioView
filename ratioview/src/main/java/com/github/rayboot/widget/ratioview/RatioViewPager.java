@@ -22,9 +22,9 @@ public class RatioViewPager extends ViewPager implements RatioMeasureDelegate {
         super(context);
     }
 
-    public RatioViewPager(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioViewPager(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioViewPager(Context context, AttributeSet attrs) {

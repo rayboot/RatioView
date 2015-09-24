@@ -40,9 +40,9 @@ public class RatioFrameLayout extends FrameLayout implements RatioMeasureDelegat
         super(context);
     }
 
-    public RatioFrameLayout(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioFrameLayout(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioFrameLayout(Context context, AttributeSet attrs) {

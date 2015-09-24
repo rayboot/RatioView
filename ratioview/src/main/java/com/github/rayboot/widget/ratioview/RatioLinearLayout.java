@@ -40,9 +40,9 @@ public class RatioLinearLayout extends LinearLayout implements RatioMeasureDeleg
         super(context);
     }
 
-    public RatioLinearLayout(Context context, RatioFixMode mode, float fixWidth, float fixHeight) {
+    public RatioLinearLayout(Context context, RatioFixMode mode, float ratioW, float ratioH) {
         super(context);
-        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, fixWidth, fixHeight);
+        mRatioLayoutDelegate = RatioViewDelegate.obtain(this, mode, ratioW, ratioH);
     }
 
     public RatioLinearLayout(Context context, AttributeSet attrs) {

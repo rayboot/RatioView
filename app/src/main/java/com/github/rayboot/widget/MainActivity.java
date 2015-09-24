@@ -5,12 +5,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.github.rayboot.widget.ratioview.RatioImageView;
+import com.github.rayboot.widget.ratioview.utils.RatioFixMode;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        RatioImageView ratioImageView = new RatioImageView(this);
+        ratioImageView.setRatio(RatioFixMode.FIX_WIDTH, 4, 3);
+
     }
 
     @Override
