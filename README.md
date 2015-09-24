@@ -45,6 +45,7 @@ or
 
 
 **Add your custom view**
+
 You could add any other view to implements `RatioMeasureDelegate`  like RatioImageView.
 
 public class RatioImageView extends ImageView implements RatioMeasureDelegate {
